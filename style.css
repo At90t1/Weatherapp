@@ -1,0 +1,91 @@
+*{
+    margin: 0%;
+    padding: 0;
+    
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #0077B6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/landscape\ night.jpg);
+    
+    overflow:hidden;
+    background-size: 100% 100%;
+}
+
+
+.weather_container{
+    color: white;
+}
+
+.temp{
+    font-size: 4.5rem;
+}
+
+
+.time_location{
+    font-size: 2rem;
+}
+
+.condition{
+    margin: 0.5rem;
+    margin-left: 0.2rem;
+    font-size:2rem ;
+}
+
+nav{
+    height: 100px;
+    margin: 5rem;
+}
+
+.search_area{
+    padding: 0.1rem 0;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-size: 1.1rem;
+    border-bottom: 2px solid white;
+    width: 98%;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+
+
+  nav form button{
+    padding: 0.5rem;
+    background-color: white;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) { /* Adjusts for tablets & phones */
+    .container {
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        padding: 20px;
+        background-image: url(images/portrait\ night.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    nav {
+        margin-left: 1.3rem;
+    
+    }
+}
+  
